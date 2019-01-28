@@ -11,7 +11,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`=bc |3bker Broadcast`,"http://twitch.tv/Death Shop")
+client.user.setGame(`THEKINGS 4 EVER`,"http://twitch.tv/Death Shop")
 client.user.setStatus("dnd")
 });
 
@@ -133,13 +133,13 @@ client.on("message", async message => {
     }
 });
 client.on("message", async message => {
-    if(message.content.startsWith(prefix + "invite")) {
+    if(message.content.startsWith()) {
         let invite = new Discord.RichEmbed()
             .setColor("RANDOM")
             .setAuthor(message.author.username, message.author.displayAvatarURL)
             .setThumbnail(message.author.avatarURL)
-            .setTitle("**Click Here To Invite The Bot To Your Server :sparkling_heart:**")
-            .setURL(`https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=8`);
+            .setTitle("**غير متوفر**")
+
             message.channel.sendEmbed(invite);
     }
 });
@@ -151,11 +151,11 @@ client.on("message", async message => {
             .setDescription(`**__برودكاست بوت | Version 1.1__ 
 
             برودكاست عادي : ${prefix}bc
-            دعوة البوت لسيرفرك : ${prefix}invite
+
             معلومات عن السيرفر : ${prefix}server
             برودكاست للأونلاين فقط : ${prefix}bco
             يعرض لك عدد المتبندين من سيرفرك : ${prefix}banned
-            رابط سيرفر الدعم الفني : https://discord.gg/YEXcDXt 
+            رابط سيرفر الدعم الفني : غير متوفر 
             **`);
             message.channel.sendEmbed(help); // رابط السيرفر يعود الى سيرفر CODES .
     }
